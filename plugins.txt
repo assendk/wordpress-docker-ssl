@@ -1,0 +1,7 @@
+wp-mail-logging
+webp-express
+query-monitor
+wps-hide-login
+stops-core-theme-and-plugin-updates
+-all-in-one-wp-migration
+-child-theme-configurator
