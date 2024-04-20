@@ -80,7 +80,7 @@ fi
 ######## Define plugins directory and plugins list file ##########################################################################
 # Define plugins directory and plugins list file
 PLUGINS_DIR="wp-app/wp-content/plugins"
-PLUGINS_FILE="plugins.txt"
+PLUGINS_FILE="plugins-download-list.txt"
 
 # Create plugins directory if it doesn't exist
 mkdir -p "$PLUGINS_DIR"

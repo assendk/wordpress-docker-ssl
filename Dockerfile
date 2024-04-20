@@ -1,5 +1,4 @@
 FROM wordpress:latest
-RUN echo "https://greenplace.local:487"
 # Copy SSL certificates
 COPY ssl_cert/mysslsite.crt /etc/apache2/ssl/mysslsite.crt
 COPY ssl_cert/mysslsite.key /etc/apache2/ssl/mysslsite.key
