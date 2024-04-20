@@ -1,4 +1,4 @@
-#Wordpress Installation Speedup Script for Linux
+# Wordpress Installation Speedup Script for Linux
 ## By using Docker containers for the PHP + MySQL/MariaDB + phpmyadmin + wpcli + SSL (self cert), bash script for automations
 The script/s can speedup a lot the WordPress site creation. It create a fresh wordpress installation, add some plugins
 
@@ -34,5 +34,5 @@ CONTAINER_GID=1000
 5. Open new terminal window and run it (./setup-wordpress.sh)
 6. Wait to the plugins and containers be installed/downloaded
 7. Open the url configured in you .env file (for example https://mysite.local:8443)
-   > Note the port is important
+   > Note: the port is important
 

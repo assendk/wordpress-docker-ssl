@@ -49,23 +49,6 @@ case $build_answer in
         ;;
 esac
 
-# Ask user if they want to start Docker containers after building
-read -p "Do you want to start Docker containers now? (y/n): " start_answer
-
-case $start_answer in
-    [Yy]* )
-        docker compose up --build -d
-        echo "Docker containers started."
-        ;;
-    [Nn]* )
-        echo "Docker containers not started."
-        ;;
-    * )
-        echo "Invalid input. Please answer y/n."
-        ;;
-esac
-
-sudo chown -R 1000:999 wp-db/db-data
 
 ##### Updating /etc/hosts #################################################################################
 HOST_ENTRY="${IP} ${MY_SITE_NAME}"
@@ -80,7 +63,7 @@ fi
 ######## Define plugins directory and plugins list file ##########################################################################
 # Define plugins directory and plugins list file
 PLUGINS_DIR="wp-app/wp-content/plugins"
-PLUGINS_FILE="plugins-download-list.txt"
+PLUGINS_FILE="plugins.txt"
 
 # Create plugins directory if it doesn't exist
 mkdir -p "$PLUGINS_DIR"
